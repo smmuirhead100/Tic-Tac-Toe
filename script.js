@@ -1,3 +1,10 @@
+// Signatures that connect to game display. 
+const space1 = document.querySelector(".container");
+space1.addEventListener('click', function (e) {
+    e.target.style.background = 'blue';
+});
+
+
 // Module that creates gameBoard grid
 const gameBoard = (() => {
     const grids = [[], [], []];
@@ -7,8 +14,17 @@ const gameBoard = (() => {
 })();
 
 // Factory that stores player info
-const Player = (name) => {
+const Player = (name, symbol) => {
     this.name = name;
-    return {name};
+    this.symbol = symbol;
+    return {name, symbol};
 }
+
+// Module that manipulates gameBoard
+
+
+const Game = ((player1, player2) => {
+    
+}
+)
 
