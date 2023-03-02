@@ -1,7 +1,7 @@
 // Signatures that connect to game display. 
 const space1 = document.querySelector(".container");
 space1.addEventListener('click', function (e) {
-    e.target.style.background = 'blue';
+    e.target.textContent = 'X';
 });
 
 
@@ -23,8 +23,5 @@ const Player = (name, symbol) => {
 // Module that manipulates gameBoard
 
 
-const Game = ((player1, player2) => {
-    
-}
-)
-
+const Game = (() => {
+});
