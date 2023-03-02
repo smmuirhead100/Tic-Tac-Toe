@@ -6,4 +6,9 @@ const gameBoard = (() => {
     }
 })();
 
+// Factory that stores player info
+const Player = (name) => {
+    this.name = name;
+    return {name};
+}
 
