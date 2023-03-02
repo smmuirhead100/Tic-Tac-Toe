@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(209, 80, 80);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: clamp(100px, 300px, 500px);
+    height: clamp(100px, 300px, 500px);
+}
+
+.container div {
+    border: 3px;
+    border-style: solid;
+}
