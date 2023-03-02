@@ -12,10 +12,12 @@ main {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     width: clamp(100px, 300px, 500px);
-    height: clamp(100px, 300px, 500px);
+    height: clamp(fit-content, 300px, fit-content);
 }
 
 .container div {
     border: 3px;
     border-style: solid;
+    text-align: center;
+    font-size: 100px;
 }
