@@ -1,6 +1,11 @@
 // Signatures that connect to game display. 
-const space1 = document.querySelector(".container");
-space1.addEventListener('click', function (e) {
+const startGameBtn = document.querySelector(".startBtn");
+startGameBtn.addEventListener('click', function (e) {
+    startGame();
+})
+
+const container = document.querySelector(".container");
+container.addEventListener('click', function (e) {
     currGame.playRound();
     e.target.textContent = charTracker.char;
     e.target.style.color = 'black';
@@ -23,7 +28,7 @@ const Player = (name, symbol) => {
     return {name, symbol, isUp};
 }
 
-// Module that manipulates gameBoard
+// Module that starts Game and asks for input. 
 const startGame = () => {
     const hasStarted = false;
     return {hasStarted};

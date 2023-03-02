@@ -14,6 +14,17 @@ main {
     border-radius: 10px;
 }
 
+.startBtn {
+    border: none;
+    border-radius: 3rem;
+    height: 2rem;
+    background-color: lightgreen;
+    transition: .2s;
+}
+
+.startBtn:hover {
+    height: 2.1rem;
+}
 .container {
     background-color: rgb(209, 80, 80);
     display: grid;
