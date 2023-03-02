@@ -16,7 +16,9 @@ main {
 }
 
 .container div {
-    border: 3px;
+    color: rgba(209, 80, 80, 0);
+    border-color: black;
+    border-width: 3px;
     border-style: solid;
     text-align: center;
     font-size: 100px;

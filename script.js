@@ -3,6 +3,7 @@ const space1 = document.querySelector(".container");
 space1.addEventListener('click', function (e) {
     currGame.playRound();
     e.target.textContent = charTracker.char;
+    e.target.style.color = 'black';
 });
 
 
