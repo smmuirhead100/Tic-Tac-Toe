@@ -61,4 +61,15 @@ const Game = (player1, player2) => {
 };
 
 
+//function that clears current board
+function clearBoard() {
+    const spaces = document.querySelector(".container").childNodes;
+    for (var i=0; i<spaces.length; i++) {
+        spaces[i].style.color = 'white';
+        spaces[i].textContent = Y;
+    }
+}
+
+// Need this to initialize game
 let currGame = Game(player1, player2);
+clearBoard();
