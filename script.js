@@ -1,7 +1,7 @@
 // Signatures that connect to game display. 
 const startGameBtn = document.querySelector(".startBtn");
 startGameBtn.addEventListener('click', function (e) {
-    startGame();
+    clearBoard();
 })
 
 const container = document.querySelector(".container");
@@ -63,13 +63,12 @@ const Game = (player1, player2) => {
 
 //function that clears current board
 function clearBoard() {
-    const spaces = document.querySelector(".container").childNodes;
+    const spaces = document.querySelector(".container").children
     for (var i=0; i<spaces.length; i++) {
-        spaces[i].style.color = 'white';
-        spaces[i].textContent = Y;
+        spaces[i].style.color = 'rgba(209, 80, 80, 0)';
+        spaces[i].textContent = 'Y';
     }
 }
 
 // Need this to initialize game
 let currGame = Game(player1, player2);
-clearBoard();
